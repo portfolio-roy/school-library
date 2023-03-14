@@ -1,8 +1,8 @@
 require './person'
 
 class ClassName
-  def initialize(specialization)
-    super(name, age, parent_permission: true)
+  def initialize(specialization, age, name = 'Unknown', parent_permission: true)
+    super(age, name, parent_permission)
     @specialization = specialization
   end
 
