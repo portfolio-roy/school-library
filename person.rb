@@ -31,4 +31,8 @@ class Person < Nameable
   attr_reader :id, :rentals
   attr_accessor :name, :age
   private :of_age?
+
+  def to_hash
+    # write your code here
+  end
 end
