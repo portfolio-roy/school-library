@@ -33,6 +33,12 @@ class Person < Nameable
   private :of_age?
 
   def to_hash
-    # write your code here
+    {
+      id: @id,
+      name: @name,
+      age: @age,
+      parent_permission: @parent_permission,
+      rentals: @rentals.map(&:to_h)
+    }
   end
 end
