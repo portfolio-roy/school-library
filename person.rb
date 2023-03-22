@@ -34,10 +34,10 @@ class Person < Nameable
 
   def to_hash
     {
-      id: @id,
-      name: @name,
       age: @age,
+      name: @name,
       parent_permission: @parent_permission,
+      id: @id,
       rentals: @rentals.map(&:to_h)
     }
   end
