@@ -31,4 +31,14 @@ class Person < Nameable
   attr_reader :id, :rentals
   attr_accessor :name, :age
   private :of_age?
+
+  def to_hash
+    {
+      id: @id,
+      name: @name,
+      age: @age,
+      parent_permission: @parent_permission,
+      rentals: @rentals.map(&:to_h)
+    }
+  end
 end
