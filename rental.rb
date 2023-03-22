@@ -8,7 +8,12 @@ class Rental
   end
 
   attr_accessor :date, :book, :person
+
   def to_hash
-    # write your code here
+    {
+      date: @date,
+      book: @book.to_hash,
+      person: @person.to_hash
+    }
   end
 end
