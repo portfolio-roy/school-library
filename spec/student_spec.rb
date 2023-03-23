@@ -33,24 +33,5 @@ describe Student do
       student.add_classroom(classroom)
       expect(classroom.students).to include(student)
     end
-    # describe "#add_classroom" do
-    #   let(:classroom) { Classroom.new("History") }
-
-    #   it "should set the classroom property to the provided value" do
-    #     student.add_classroom(classroom)
-    #     expect(student.classroom.label).to eq("History")
-    #   end
-
-    #   it "should add the student to the classroom's list of students" do
-    #     student.add_classroom(classroom)
-    #     expect(classroom.students).to include(student)
-    #   end
-
-    #   it "should not add the student to the classroom's list of students if they are already in the list" do
-    #     classroom.add_student(student)
-    #     student.add_classroom(classroom)
-    #     expect(classroom.students.count(student)).to eq(1)
-    #   end
-    # end
   end
 end
